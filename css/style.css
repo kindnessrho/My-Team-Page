@@ -1,0 +1,413 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-font: "poppins", sans-serif;
+  --secondary-font: "PT Serif", Serif;
+}
+
+body {
+  font: 18px;
+  width: 100%;
+  font-family: var(--primary-font), var(--secondary-font);
+  display: grid;
+  place-items: center;
+}
+
+/* HEADER */
+
+.page-header {
+  max-width: 69%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 110px;
+  margin-bottom: 30px;
+}
+
+.title {
+  max-width: 278px;
+  font-family: PT Serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.045em;
+}
+
+.purpose {
+  max-width: 440px;
+  margin-left: 215px;
+  font-family: Poppins;
+}
+
+.purpose h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.purpose p {
+  width: 400px;
+  font-size: 18px;
+  font-family: 400;
+  line-height: 30px;
+  height: 87px;
+}
+
+/* TEAM SECTION */
+
+img {
+  width: 235;
+  height: 340px;
+}
+
+.team-section {
+  margin-top: -96px;
+  margin-bottom: 155px;
+  max-width: 65%;
+}
+
+.container {
+  height: 1100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container .box {
+  display: flex;
+  align-items: flex-start;
+  width: 265px;
+  height: 385px;
+}
+
+.container .box2 {
+  align-self: flex-end;
+}
+
+.container .box5 {
+  align-self: flex-end;
+}
+
+.card .name {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.box p {
+  font-family: PT Serif;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  writing-mode: vertical-lr;
+}
+
+/* FOOTER */
+
+.footer,
+a {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: none;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #a9a9a9;
+}
+
+footer .username {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1270px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .page-header {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .team-section {
+    margin-top: 96px;
+    margin-bottom: 155px;
+    max-width: 95%;
+  }
+  .container {
+    max-width: 200%;
+    height: 1100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .container .box {
+    display: flex;
+    align-items: flex-start;
+
+    width: 265px;
+    height: 385px;
+  }
+  .container .box2 {
+    align-self: flex-end;
+  }
+  .container .box5 {
+    align-self: flex-end;
+  }
+  .card .name {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .box p {
+    font-family: PT Serif;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    writing-mode: vertical-lr;
+  }
+}
+
+@media screen and (min-width: 765px) and (max-width: 1023px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .purpose {
+    justify-self: flex-end;
+    align-self: flex-start;
+    margin-left: 350px;
+    margin-top: -108px;
+  }
+  .page-header {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .purpose h3 {
+    font-size: 1rem;
+  }
+  .purpose p {
+    font-size: 1rem;
+  }
+  .container .box {
+    width: 156px;
+    height: 237px;
+  }
+  .box .card .name {
+    font-size: 0.777rem;
+  }
+  .box p {
+    font-size: 0.555rem;
+  }
+  img {
+    display: block;
+    width: 140px;
+    height: 210px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 760px) {
+  body {
+    display: grid;
+    align-items: center;
+    justify-items: start;
+  }
+  .team-section {
+    display: grid;
+    align-items: center;
+    justify-items: start;
+    /*👉max-width: 82%;👈*/
+    max-width: 82%;
+    /*👉min-width: auto;👈*/
+  }
+  .page-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+    width: 100%;
+    margin-right: 120px;
+
+    padding: 20px;
+  }
+
+  .purpose {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 0px;
+    margin-top: 38px;
+    /*👉  width: 300px;👈*/
+  }
+  .purpose h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .purpose p {
+    font-size: 14px;
+    line-height: 23px;
+    width: 333px;
+  }
+  .container {
+    padding-bottom: 100px;
+  }
+  .container .box {
+    width: 156px;
+    height: 237px;
+  }
+  .box .card .name {
+    font-size: 0.777rem;
+  }
+  .box p {
+    font-size: 0.555rem;
+  }
+  img {
+    display: block;
+    width: 140px;
+    height: 210px;
+  }
+
+  .box4 {
+    align-self: flex-end;
+  }
+  .box5 {
+    align-self: center;
+  }
+  .box6 {
+    align-self: flex-end;
+    margin-bottom: -50px;
+  }
+  footer .username {
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  footer {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-left: 12%;
+  }
+  .mark {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 374px) {
+  body {
+    display: grid;
+    align-items: center;
+    justify-items: start;
+
+    margin: auto;
+  }
+
+  .page-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+    width: 100%;
+    margin-right: 120px;
+
+    padding: 20px;
+  }
+
+  .purpose {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 0px;
+    margin-top: 38px;
+  }
+
+  .purpose h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .purpose p {
+    font-size: 14px;
+    line-height: 23px;
+    width: 333px;
+  }
+  .team-section {
+    display: grid;
+    align-items: center;
+    justify-items: start;
+    max-width: 70%;
+  }
+
+  .container {
+    padding-bottom: 100px;
+  }
+  .container .box {
+    width: 156px;
+    height: 237px;
+  }
+  .box .card .name {
+    font-size: 0.777rem;
+  }
+  .box p {
+    font-size: 0.555rem;
+  }
+  img {
+    display: block;
+    width: 140px;
+    height: 210px;
+  }
+
+  .box4 {
+    align-self: flex-end;
+  }
+  .box5 {
+    align-self: center;
+  }
+  .box6 {
+    align-self: flex-end;
+    margin-bottom: -50px;
+  }
+  footer .username {
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  footer {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-left: 12%;
+  }
+  .mark {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    max-width: 100%;
+  }
+}
