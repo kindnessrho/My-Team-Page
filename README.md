@@ -36,7 +36,7 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](https://github.com/kindnessrho/My-Team-Page/blob/main/img/myteampage.png)
 
 A devchallenges.io challenge to build a [ MY TEAM PAGE](https://devchallenges.io/challenges/hhmesazsqgKXrTkYkt0U) using HTML AND CSS. [Check out my solution here 👉](https://my-teampage-devchallenges.netlify.app).
 This challenge has helped to improve on using flexbox and css grid.
