@@ -224,18 +224,19 @@ footer .username {
   }
 }
 
-@media screen and (min-width: 375px) and (max-width: 760px) {
+@media screen and (min-width: 376px)/*4/5/21👉previous(min-width: 375px)👈*/ and (max-width: 760px) {
   body {
     display: grid;
     align-items: center;
     justify-items: start;
+    overflow-x: hidden;/*👉4/5/21👈*/
   }
   .team-section {
     display: grid;
     align-items: center;
     justify-items: start;
-    /*👉max-width: 82%;👈*/
-    max-width: 82%;
+    /*👉max-width: 82%;previous👈*/
+    max-width: 81%;/*👉4/5/21👈*/
     /*👉min-width: auto;👈*/
   }
   .page-header {
@@ -317,12 +318,12 @@ footer .username {
   }
 }
 
-@media screen and (min-width: 200px) and (max-width: 374px) {
+@media screen and (min-width: 200px) and (max-width: 375px)/*4/5/21👉previous(max-width: 374px)👈*/ {
   body {
     display: grid;
     align-items: center;
     justify-items: start;
-
+    overflow-x: hidden;/*👉4/5/21👈*/
     margin: auto;
   }
 
@@ -361,7 +362,8 @@ footer .username {
     display: grid;
     align-items: center;
     justify-items: start;
-    max-width: 70%;
+    max-width: 70%;/*👉4/5/21👈*/
+    overflow: hidden;/*👉4/5/21👈*/
   }
 
   .container {
